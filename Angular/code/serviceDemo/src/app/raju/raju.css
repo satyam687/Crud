@@ -1,0 +1,24 @@
+ body, .card {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 700px;
+  height: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  background-image: url(https://preview.redd.it/is-tog-better-than-tbate-novel-included-ofc-v0-rfla7yacyeqe1.png?width=640&crop=smart&auto=webp&s=8485fcce1e9a4ded35494043354dc17c6d1c43e5);
+}
+
+body {
+     
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

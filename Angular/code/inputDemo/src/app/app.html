@@ -1,0 +1,19 @@
+ <app-header></app-header>
+<h2>Crowd Pleasers</h2>
+<div class="movies">
+    @for(m of movies;track m){
+    <app-movies title="{{m.movieName}}" url="{{m.imageURl}}"/>
+   }
+</div>
+
+
+<h2>Made in Inia</h2>
+<div class="movies">
+    @for(m of movies;track m){
+    <app-movies title="{{m.movieName}}" url="{{m.imageURl}}"/>
+   }
+</div>
+
+
+
+<app-footer></app-footer>

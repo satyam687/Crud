@@ -1,0 +1,7 @@
+ <div style="border: 2px solid red; padding: 20px;">
+  <button (click)="onShowImage()">Click to Show Image</button>
+  
+  <div *ngIf="showImage">
+    <img [src]="imageUrl" alt="User Image" width="200" height="150" />
+  </div>
+</div>

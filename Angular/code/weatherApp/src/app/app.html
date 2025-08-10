@@ -1,0 +1,11 @@
+ <div>
+  <input type="text"[(ngModel)]="city" placeholder="Please Enter city Name" >
+  <button (click)="getWeather()">Get Weather</button>
+ </div>
+ <div>
+  <img src={{details.condition.icon}} alt="image">
+  <h2>{{details.condition.text}}</h2>
+  <p>
+    Temparature:{{details.temp_c}}<sup>o</sup>C
+  </p>
+ </div>

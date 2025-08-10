@@ -1,0 +1,11 @@
+ <div class="card">
+  <h2>Pokémon Search</h2>
+  <input [(ngModel)]="name"  placeholder="Enter Pokémon name (e.g., pikachu)" />
+   
+  <button (click)="getpoko()">Search</button>
+
+  <div *ngIf="url.name">
+    <h3>Name: {{ url.name }}</h3>
+    <img *ngIf="url.image" [src]="url.image" alt="{{ url.name }}" />
+  </div>
+</div>

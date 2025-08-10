@@ -1,0 +1,77 @@
+ <!-- <input type="text" placeholder="Enter a number" [(ngModel)]="num" (input)="evenOdd()">
+<button (click)="evenOdd()">check</button> -->
+
+<!-- new syntax -->
+ <!-- @if(isEven){
+  <h1>{{num}} is even</h1>
+ }
+ @else
+ {
+   <h1>{{num}} is odd</h1>
+ } -->
+  <!-- <input
+  type="text"
+  placeholder="Enter a name"
+  [(ngModel)]="name"
+/>
+
+@if (name.toLowerCase() === 'doramon' || name.toLowerCase() === 'doraemon') {
+  <h1>{{ name }} is Doraemon</h1>
+  <img
+    src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgd42TOgOHS5h89YC8DblEUKFBTHr139oUcA&s"
+    alt="Doraemon"
+  />
+} @else if (name.toLowerCase() === 'robin') {
+  <h1>{{ name }} is Robin</h1>
+  <img
+    src="https://gear5world.com/cdn/shop/articles/nico_robin_wano_kuni_one-piece_5b4c3dd0-493f-4983-84d0-1420a4a5af93.jpg?v=1739192966 "
+    alt="Robin"
+  />
+} @else if(name.toLowerCase() === 'shichan') {
+  <h1>{{ name }} is Shichan</h1>
+  <img
+    src=" https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOL9CWnGZQkaDWKDozBzYeGlNnS7aWcnvircCyTB-NMPBgeBDj8y4NRvRDbRuVWXT4klVtIlEX5n_R8rsh1CjQub6RlnXpJQzkdEtwLAVF0Q"
+    alt="Shichan"
+  />
+}@else  {
+  <h1>{{ name }} is Nohara</h1>
+  <img
+    src="https://i.redd.it/wlsi6z2zszke1.png "
+    alt="Nohara"
+  />
+}  -->
+
+<!--old syntax -->
+<div [ngSwitch]="role">
+  <p *ngSwitchCase="'teacher'">Welcome to teacher</p>
+   <p *ngSwitchCase="'student'">Welcome to Student</p>
+    <p *ngSwitchCase="'admin'">Welcome to Admin</p>
+     <p *ngSwitchDefault>UnAuthorized role</p>
+</div>
+<select [(ngModel)]="role">
+  <option value="student">student</option>
+   <option value="teacher">teacher</option>
+    <option value="admin">admin</option>
+     <option value="other">other</option>
+</select>
+<p *ngFor="let m of arr;let ind=index">
+  The name is {{m}}{{ind}}
+</p>
+@for(m of arr;let ind = $index;track m;){
+  <p>The name is {{m}}{{ind}}</p>
+}
+@switch(role){
+  @case('student'){
+    <p> Welcome to student</p>
+    <h1>take chocolate</h1>
+  }
+  @case('admin'){
+    <p> Welcome to Admin</p>
+  }
+  @case('teacher'){
+    <p> Welcome to Teacher</p>
+  }
+  @default{
+    <p>Unauthorized Role</p>
+  }
+}

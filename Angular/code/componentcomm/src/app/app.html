@@ -1,0 +1,13 @@
+ <h2>🧮 Counter: {{ counter }}</h2>
+
+<!-- Template reference + ngModel -->
+<input type="text" placeholder="Enter image URL" [(ngModel)]="imageUrl">
+
+<!-- Button to hide image from parent -->
+<button (click)="hideImageFromParent()">Hide Image (ViewChild)</button>
+
+<!-- Child component -->
+<app-child 
+  [imageUrl]="imageUrl" 
+  (imageClicked)="incrementCounter()"
+></app-child>

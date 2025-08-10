@@ -1,0 +1,9 @@
+<div class="card">
+  <h2>Raju</h2>
+  <input type="text" [(ngModel)]="rajuMsg" placeholder="Message to Rani" />
+  <button (click)="send()">Send to Rani</button>
+  <br /><br />
+  <h3>Message from Rani:</h3>
+  <input type="text" [(ngModel)]="raniMsgReceived" readonly />
+  <button (click)="receive()">Receive</button>
+</div>

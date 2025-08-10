@@ -1,0 +1,33 @@
+ <!-- <header>FAKESHOP</header>
+<div class="products">
+  @for(p of products;track p){
+    <div class="product">
+        <img src={{p.image}} alt={{p.title}}>
+        <h2>{{p.title}}</h2>
+        <p>Price:₹{{p.price}}</p>
+    </div>
+  }
+</div> -->
+
+ 
+
+ <header>
+  <h1>FAKESHOP</h1>
+</header>
+
+<!-- Filter Dropdown -->
+<nav>
+  <label for="category">Filter by Category:</label>
+  <select id="category" [(ngModel)]="selectedCategory">
+    <option *ngFor="let categories" [value]="cat">{{ cat }}</option>
+  </select>
+</nav>
+
+<!-- Product List -->
+<div class="products">
+  <div class="product" *ngFor="let p of filteredProducts">
+    <img [src]="p.image" [alt]="p.title" />
+    <h2>{{ p.title }}</h2>
+    <p>Price: ₹{{ p.price }}</p>
+  </div>
+</div>

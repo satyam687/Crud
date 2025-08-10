@@ -1,0 +1,46 @@
+ .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FTowerofGod%2Fcomments%2F1jhvzdh%2Fis_tog_better_than_tbate_novel_included_ofc%2F&psig=AOvVaw3bPwRtnW8psCQKTqIYEa9M&ust=1753943002960000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwi44bn--OOOAxXrVmwGHdzkN-IQjRx6BAgAEBo'); /* path updated below */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border: 2px solid #007bff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: blue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

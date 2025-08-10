@@ -1,0 +1,12 @@
+ <div class="container">
+  <h1>Counter App</h1>
+
+  <!-- Bind counter value -->
+  <div id="counter" class="counter">{{ count }}</div>
+
+  <div class="buttons">
+    <button (click)="incr()" id="increment">Increment</button>
+    <button (click)="decr()" id="decrement">Decrement</button>
+    <button (click)="reset()" id="reset">Reset</button>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "mname": "KGF 2",
+      "mUrl": "https://m.media-amazon.com/images/M/MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "mYear": 2022,
+      "id": "0a22"
+    },
+    {
+      "id": "9762",
+      "mname": "Shinchan",
+      "mUrl": "https://m.media-amazon.com/images/I/41AP1VGhL7L._AC_UF1000,1000_QL80_.jpg",
+      "mYear": 2020
+    },
+    {
+      "mname": "Case of Kondana",
+      "mUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/Case_of_Kondana.jpg",
+      "mYear": 2024,
+      "id": "801c"
+    }
+  ]
+}

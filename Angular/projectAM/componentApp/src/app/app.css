@@ -1,0 +1,11 @@
+.books{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap:24px;
+ 
+}
+h2{
+ text-align: center;
+ font-size: 48px;
+  
+}

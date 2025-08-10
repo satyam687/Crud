@@ -1,0 +1,30 @@
+ <app-header></app-header>
+
+ <main> 
+  @for (p of products; track p) {
+  <div class="product-card">
+    <img [src]="p.image" [alt]="p.title" />
+    <h2>{{ p.title }}</h2>
+    <p class="desc">{{ p.previewDescription }}</p>
+    <p class="category">Category: {{ p.category || 'Cake' }}</p>
+    <p></p>
+    <button (click)="fun()">Add to Cart</button>
+  </div>
+}
+ 
+   @if (isShow) {
+ 
+    <div class="modal">
+      <button (click)="closeBox()">❎</button>
+      Product is added successfully
+    </div>
+ 
+}
+ 
+  
+
+ </main>
+   
+  
+ 
+<app-footer></app-footer>
